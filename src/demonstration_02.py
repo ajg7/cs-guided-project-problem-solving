@@ -14,7 +14,15 @@ Notes:
 - The input list will only contain integers.
 """
 
+from typing import List
 
-def add_indexes(numbers):
+def add_indexes(numbers: List[int]) -> List[int]:
     # Your code here
-
+    output = []
+    
+    for i in range(len(numbers)):
+        n = numbers[i]
+        sum = n + i
+        output.append(sum)
+        
+    return output

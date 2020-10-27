@@ -15,7 +15,17 @@ Notes:
 - The return string must be two numbers separated by a single space, and
 the maximum number is first.
 """
-def max_and_min(input_str):
+def max_and_min(input_str: str) -> str:
     # Your code here
-
+    str_digits = input_str.split(" ")
+    int_digits = []
+    
+    for str_digit in str_digits:
+        int_digit = int(str_digit)
+        int_digits.append(int_digit)
+        
+    mx = max(int_digits)
+    mn = min(int_digits)
+    
+    return f"{mx} {mn}"
 

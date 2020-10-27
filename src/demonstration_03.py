@@ -12,6 +12,8 @@ Examples:
 Notes:
 - Bonus: Try to complete this challenge in one line!
 """
-def multiply_nums(nums):
-    # Your code here
+from typing import List
 
+def multiply_nums(nums: List[int]) -> int:
+    # Your code here
+    
